@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - TaskManagerDB@localhost" uuid="62c1ba6f-f875-47ef-b0db-1988a7d8567a">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>TaskManagerDB.*</schema-pattern>
+      <default-schemas>TaskManagerDB.*</default-schemas>
+    </data-source>
+  </component>
+</project>

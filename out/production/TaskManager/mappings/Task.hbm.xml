@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="entity.Task" table="tasks" schema="TaskManagerDB">
+        <id name="ID" column="id"/>
+        <property name="title" column="TITLE"/>
+        <property name="body" column="BODY"/>
+        <property name="progress" column="PROGRESS">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">enums.TaskProgressEnum</param>
+            </type>
+        </property>
+        <many-to-one name="user" class="entity.User" column="user_id"/>
+    </class>
+</hibernate-mapping>
+
+
+
+
